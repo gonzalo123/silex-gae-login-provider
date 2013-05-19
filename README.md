@@ -34,9 +34,10 @@ $app->register(new LoginProvider(), array(
 $auth = $app['gae.auth']();
 
 $app->get('/', function () use ($app, $auth) {
-    return "<a href='" . $auth->getLoginUrl() . "'>login</a>";
+    return $auth->isLogged() ?
+        $app->redirect("/private") :
+        "<a href='" . $auth->getLoginUrl() . "'>login</a>";
 });
-
 $app->get('/private', function () use ($app, $auth) {
     return $auth->isLogged() ?
         "Hello " . $auth->getUser()->getNickname() . " <a href='" . $auth->getLogoutUrl() . "'>logout</a>" :
