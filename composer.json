@@ -1,0 +1,24 @@
+{
+    "name": "gonzalo123/silex-gae-login-provider",
+    "description": "Google App Engine Login provider for Silex",
+    "license":"MIT",
+    "keywords":["gae", "silex", "google"],
+    "type":"library",
+    "homepage":"https://github.com/gonzalo123/sh",
+    "authors": [
+        {
+            "name": "Gonzalo Ayuso",
+            "email": "gonzalo123@gmail.com",
+            "homepage": "http://gonzalo123.com"
+        }
+    ],
+    "require": {
+        "php":">=5.4.0",
+        "silex/silex": "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "lib/"
+        }
+    }
+}
