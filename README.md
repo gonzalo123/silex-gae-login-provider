@@ -15,6 +15,7 @@ handlers:
   script: main.php
 ```
 
+Silex Application:
 ```php
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
