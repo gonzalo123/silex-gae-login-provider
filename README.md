@@ -3,7 +3,7 @@ Google App Engine Login provider for Silex
 Usage example:
 
 Google app engine configuration:
-```
+```yaml
 application: silexgae
 version: 1
 runtime: php
@@ -15,7 +15,7 @@ handlers:
   script: main.php
 ```
 
-```
+```php
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
